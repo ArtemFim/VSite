@@ -57,10 +57,24 @@
   &__lists {
     list-style-type: none;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 230px);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+    width: 900px;
+    height: 800px;
+    background-color: #f2f2f2;
+    padding: 0;
+    .nav__list {
+      margin: auto;
+      .nav__link {
+        display: flex;
+        flex-direction: column;
+        .link__title {
+          text-align: center;
+        }
+      }
+    }
     .nav__list--1 {
       grid-area: 1 / 1 / 2 / 2;
     }
@@ -84,6 +98,13 @@
     }
     .nav__gallery {
       display: flex;
+      background-color: #002654;
+      max-height: 220px;
+      justify-content: space-around;
+      align-items: center;
+      .gallery__img {
+        margin: 0 25px;
+      }
     }
   }
 }
